@@ -7,7 +7,7 @@
 <meta name="description" content="공부하는 모든 순간, 머릿속에 힘을 더하다. 사군자탕 기반 무카페인 일상 헬스 젤리. 1일 2포 × 7일 = 14포 1주일 프로그램. 국내 자체 기술 · 콜마BNH 제조 · 최성화 박사 배합.">
 <meta name="keywords" content="힘뇌장,보드락,Beaudrug,무카페인,사군자탕,한국인 체질,젤리스틱,1주일 챌린지,수험생,대학생,직장인,오전오후,L-테아닌,L-글루타민,울금,원지,노루궁뎅이,지플러스생명과학">
 <meta property="og:title" content="힘내자, 힘뇌장! · 1주일 챌린지로 머릿속에 힘을">
-<meta property="og:description" content="속이 자주 불편한 분들이 다시 책상 앞에 앉을 때. 1일 2포 × 7일 = 14포 1주일 챌린지 헬스 젤리.">
+<meta property="og:description" content="속이 자주 불편한 분들이 다시 책상 앞에 앉을 때. 사군자탕 기반 무카페인 일상 헬스 젤리. 2026 하반기 출시 예정.">
 <meta property="og:type" content="website">
 <style>
 :root {
@@ -249,6 +249,34 @@ footer ul li a:hover { color: var(--gold-bright); }
   nav { display: none; }
   .price-card.featured { transform: none; }
 }
+
+.ing-card .cite { display: block; font-size: 11px; color: var(--gray-5); margin-top: 12px; line-height: 1.5; font-style: italic; padding-top: 10px; border-top: 1px dashed #e8e3f0; }
+.ing-card .cite i { font-weight: 700; font-style: italic; color: var(--purple); }
+
+.waitlist-box {
+  background: linear-gradient(135deg, var(--purple-light) 0%, var(--white) 50%, var(--gold-light) 100%);
+  border-radius: 28px; padding: 60px; box-shadow: 0 24px 60px rgba(91,58,142,0.1);
+  display: grid; grid-template-columns: 1.4fr 1fr; gap: 50px; align-items: center;
+}
+.waitlist-eyebrow { color: var(--gold); font-weight: 800; font-size: 12px; letter-spacing: 4px; margin-bottom: 14px; }
+.waitlist-content h3 { font-size: 36px; font-weight: 900; margin-bottom: 16px; letter-spacing: -1.5px; }
+.waitlist-text { color: var(--gray-7); font-size: 16px; line-height: 1.75; margin-bottom: 24px; }
+.waitlist-row { display: flex; gap: 10px; margin-bottom: 14px; }
+.waitlist-email { flex: 1; padding: 16px 20px; border-radius: 30px; border: 1.5px solid #d8d0e5; font-size: 15px; font-family: inherit; outline: none; transition: border-color 0.2s; }
+.waitlist-email:focus { border-color: var(--purple); }
+.waitlist-btn { background: linear-gradient(135deg, var(--purple) 0%, var(--purple-bright) 100%); color: var(--white); padding: 16px 28px; white-space: nowrap; }
+.waitlist-btn:hover { transform: translateY(-2px); }
+.waitlist-note { font-size: 13px; color: var(--gray-5); }
+.waitlist-stats { display: flex; flex-direction: column; gap: 16px; }
+.ws-stat { background: var(--white); border-radius: 16px; padding: 22px; text-align: center; border: 1.5px solid #ece5f3; }
+.ws-stat .ws-num { font-size: 28px; font-weight: 900; color: var(--purple); letter-spacing: -1px; }
+.ws-stat .ws-label { font-size: 13px; color: var(--gray-7); margin-top: 4px; font-weight: 700; }
+
+@media (max-width: 900px) {
+  .waitlist-box { grid-template-columns: 1fr; padding: 40px; }
+  .waitlist-row { flex-direction: column; }
+}
+
 </style>
 </head>
 <body>
@@ -278,9 +306,9 @@ footer ul li a:hover { color: var(--gold-bright); }
       <a href="#audience">누구에게</a>
       <a href="#ingredients">원료</a>
       <a href="#researcher">개발자</a>
-      <a href="#purchase">구매</a>
+      <a href="#waitlist">출시 예정</a>
     </nav>
-    <a href="#purchase" class="cta-button">1주일 도전 시작</a>
+    <a href="#waitlist" class="cta-button">출시 알림 받기</a>
   </div>
 </header>
 
@@ -292,7 +320,7 @@ footer ul li a:hover { color: var(--gold-bright); }
       <p class="h1-shout"><strong>공부하는</strong> 모든 순간,<br>머릿속에 힘을 더하다.</p>
       <p class="lead">늘 배가 더부룩한 직장인이, 오래 앉아 있어야 하는 수험생이, 한 시간 더 또렷하고 싶은 모두가 부담 없이 책상 위에 두는 무카페인 헬스 젤리. 사군자탕 기반, 국내 자체 기술로 한국인 체질에 맞춰 설계했어요.</p>
       <div class="hero-cta-group">
-        <a href="#purchase" class="btn btn-gold">1주일 도전 시작 → ₩14,500</a>
+        <a href="#waitlist" class="btn btn-gold">출시 알림 받기 →</a>
         <a href="#pain" class="btn btn-outline">속이 자주 불편한 분?</a>
       </div>
     </div>
@@ -424,14 +452,14 @@ footer ul li a:hover { color: var(--gold-bright); }
         <p><strong>직장인</strong> · 출근 직후, 첫 커피 대신 — 위장 자극 없이 시작.</p>
         <p><strong>학생</strong> · 등교 후 1교시 전 — 졸음 없이 또렷하게.</p>
         <p><strong>시니어</strong> · 아침 식사 후 약과 함께 — 부드럽게.</p>
-        <div class="ritual-detail">사군자탕 750mg · 노루궁뎅이 250mg · 원지 200mg · L-테아닌 125mg을 함유.</div>
+        <div class="ritual-detail">전통 사군자탕과 노루궁뎅이·원지·L-테아닌이 함께 차분한 아침을 돕는 한 포.</div>
       </div>
       <div class="ritual-card pm">
         <div class="ritual-time"><div class="time-icon">🌙</div><div><div class="time-label">PM RITUAL</div><div class="time-text">오후 1포</div></div></div>
         <p><strong>오후 3시</strong> · 두 번째 커피 대신 — 같은 한 포로 두 번째 라운드.</p>
         <p><strong>점심 후 더부룩함</strong> · 위에 부담 없는 젤리 한 포.</p>
         <p><strong>야자 시작 전</strong> · 한 포로 집중 모드 ON.</p>
-        <div class="ritual-detail">동일한 12g 한 포. 분할 섭취로 자극은 절반, 효과는 종일. 3포까지 안전 마진 안.</div>
+        <div class="ritual-detail">동일한 12g 한 포. 한 번에 다 먹지 않고 분할 섭취로 위장 부담을 줄이는 것이 핵심.</div>
       </div>
     </div>
     <div class="ritual-banner">
@@ -449,15 +477,70 @@ footer ul li a:hover { color: var(--gold-bright); }
       <p class="section-sub">전통 한방 4종(사군자탕) 코어 + 노루궁뎅이·원지·L-테아닌·L-Tyrosine + 신규 L-글루타민·울금. 한국인 체질에 맞춰 정밀 설계.</p>
     </div>
     <div class="ing-grid">
-      <div class="ing-card"><div class="ing-cat">전통 한방 베이스</div><h4>개량 사군자탕</h4><div class="ing-dose">1포 750mg · 1일 1,500mg</div><p>인삼·백출·복령·감초 4가지 약재를 0.5:1:1.5:0.2 비율로. 복령 비중을 높여 한국인 체질에 맞춰 재설계한 국내 자체 배합.</p></div>
-      <div class="ing-card"><div class="ing-cat">국내 산지 식용 버섯</div><h4>노루궁뎅이버섯 추출</h4><div class="ing-dose">1포 250mg · 1일 500mg</div><p>국내 식용 가능 버섯. 일본 야마부시타케(Hericium)와 같은 종으로 전통적으로 식품 원료로 활용되어 왔습니다.</p></div>
-      <div class="ing-card"><div class="ing-cat">한방 약재 (거심 법제)</div><h4>법제 원지(去芯)</h4><div class="ing-dose">1포 200mg · 1일 400mg</div><p>심지를 제거한 거심(去芯) 공정. 한방에서 총명탕의 핵심 약재로 오랜 기간 사용되어 온 원료를 자체 법제 공정으로 정밀 가공.</p></div>
-      <div class="ing-card"><div class="ing-cat">★ 식약처 고시 기능성 원료</div><h4>L-테아닌</h4><div class="ing-dose">1포 125mg · 1일 250mg</div><p>녹차 유래 아미노산. 식약처 고시 기능성 원료입니다.</p><span class="functional-badge">스트레스로 인한 긴장 완화에 도움</span></div>
-      <div class="ing-card"><div class="ing-cat">아미노산</div><h4>L-Tyrosine</h4><div class="ing-dose">1포 100mg · 1일 200mg</div><p>식품 등급 결정형 아미노산. 6차 시제품에서 발견된 자극 이슈를 해소하기 위해 안전 임계치 내에서 정밀 감량.</p></div>
-      <div class="ing-card new"><div class="ing-cat">★ NEW · 7차 신규</div><h4>L-글루타민</h4><div class="ing-dose">1포 250mg · 1일 500mg</div><p>식약처 등록 식품 원료 아미노산. 위장이 자주 예민한 분들을 위해 7차에서 새로 도입. 일일 안전 섭취량의 10%만 함유.</p></div>
-      <div class="ing-card new"><div class="ing-cat">★ NEW · 7차 신규</div><h4>울금(강황) 추출</h4><div class="ing-dose">1포 50mg · 1일 100mg</div><p>전통적으로 소화·간 건강에 활용되어 온 식품 원료. 커큐민 ≥95% 표준화 추출. 한국인 위장 자극 임계치 안에서 안전 함량.</p></div>
-      <div class="ing-card"><div class="ing-cat">에너지 베이스</div><h4>팔라티노스 + D-리보스</h4><div class="ing-dose">1포 1,125mg · 1일 2,250mg</div><p>천연 유래 지속형 당. 설탕보다 혈당 변화가 느린 식품 원료. 정교한 당산비로 '꿀맛'을 구현했습니다.</p></div>
-      <div class="ing-card"><div class="ing-cat">미네랄 · 비타민</div><h4>Mg · Zn · B6 · B12</h4><div class="ing-dose">2포 = 식약처 일일 권장 67~100%</div><p>글루콘산 형태로 흡수율을 높인 미네랄. 비타민 B6·B12 1일 2포 섭취 시 영양소 기준치의 약 100%를 충족.</p></div>
+      <div class="ing-card">
+        <div class="ing-cat">전통 한방 베이스</div>
+        <h4>개량 사군자탕</h4>
+        <p>인삼·백출·복령·감초 4가지 약재의 한방 처방. 11세기 송대 의서 『太平惠民和劑局方』에 수록된 이래 비위(脾胃)를 보(補)하는 대표 처방으로 오랜 기간 활용되어 왔습니다. 한국인 체질에 맞춰 약재 비율을 재해석했습니다.</p>
+        <span class="cite">(원전: 『太平惠民和劑局方』, 송대 1107~1110년 편찬)</span>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-cat">국내 산지 식용 버섯</div>
+        <h4>노루궁뎅이버섯</h4>
+        <p>에리나신(Erinacine) 성분을 함유한 식용 버섯. 인지 기능과 신경 성장 관련 활발한 연구가 이뤄지고 있으며, 일본·중국에서 전통적으로 위장·두뇌에 활용되어 왔습니다.</p>
+        <span class="cite">(Mori, K. et al., <i>Phytotherapy Research</i>, 2009 — Yamabushitake와 경증 인지 변화에 관한 보고)</span>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-cat">한방 약재 (거심 법제)</div>
+        <h4>법제 원지(去芯)</h4>
+        <p>심지를 제거한 거심(去芯) 공정으로 가공한 한방 약재. 테뉴이폴린(Tenuifolin) 활성 성분이 함유되어 있으며, 한방에서 '총명탕(聰明湯)'의 핵심 약재로 학습·기억에 전통적으로 활용되었습니다.</p>
+        <span class="cite">(Peng, J. & Zhang, X., <i>Phytomedicine</i>, 2008 — 원지 추출물의 학습·기억 연구)</span>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-cat">★ 식약처 고시 기능성 원료</div>
+        <h4>L-테아닌</h4>
+        <p>녹차에 함유된 아미노산. 식약처가 인정한 고시형 기능성 원료입니다.</p>
+        <span class="functional-badge">스트레스로 인한 긴장 완화에 도움</span>
+        <span class="cite">(Owen, G. & Nobre, A., <i>Asia Pacific Journal of Clinical Nutrition</i>, 2008 — L-테아닌과 알파(α)파 연구)</span>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-cat">아미노산</div>
+        <h4>L-Tyrosine</h4>
+        <p>도파민·노르에피네프린 등 신경전달물질의 전구체 역할을 하는 아미노산. 스트레스 환경에서의 인지 유지에 관한 연구가 보고되었습니다.</p>
+        <span class="cite">(Lieberman, H. & Banderet, L., <i>Brain Research Bulletin</i>, 1989 — 스트레스 하 티로신의 인지 효과)</span>
+      </div>
+
+      <div class="ing-card new">
+        <div class="ing-cat">★ NEW · 7차 신규</div>
+        <h4>L-글루타민</h4>
+        <p>장 상피세포(enterocyte)의 주요 에너지원 아미노산. 장벽 건강 유지와 관련된 연구가 다수 보고되어, 위장이 자주 예민한 분들을 위해 새로 도입했습니다.</p>
+        <span class="cite">(Kim, M. & Kim, H., <i>Int. J. Mol. Sci.</i>, 2017 — 글루타민의 장내 역할 리뷰)</span>
+      </div>
+
+      <div class="ing-card new">
+        <div class="ing-cat">★ NEW · 7차 신규</div>
+        <h4>울금(강황) 추출</h4>
+        <p>커큐민(Curcumin) 함유 식품 원료. 동남아·인도에서 천 년 이상 전통적으로 소화와 간 건강에 활용되어 온 향신료. 표준화된 추출 분말을 사용합니다.</p>
+        <span class="cite">(Hewlings, S. & Kalman, D., <i>Foods</i>, 2017 — 커큐민 효능 종합 리뷰)</span>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-cat">지속형 당 + 천연 단맛</div>
+        <h4>팔라티노스 + D-리보스</h4>
+        <p>팔라티노스(이소말툴로스)는 사탕무 유래 천연 이당류. 일반 자당 대비 혈당 변화가 완만한 것으로 알려져 있으며, 인지 수행 관련 연구가 보고되었습니다.</p>
+        <span class="cite">(Benton, D. & Young, H., <i>European Journal of Nutrition</i>, 2015 — Palatinose™와 혈당·인지 연구)</span>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-cat">미네랄 · 비타민</div>
+        <h4>Mg · Zn · B6 · B12</h4>
+        <p>글루콘산 형태로 흡수율을 높인 마그네슘·아연, 그리고 비타민 B6·B12. 마그네슘은 시냅스 가소성과 학습·기억에 관한 연구가 활발히 진행되어 왔습니다.</p>
+        <span class="cite">(Slutsky, I. et al., <i>Neuron</i>, 2010 — 뇌 마그네슘과 학습·기억 강화)</span>
+      </div>
+
     </div>
   </div>
 </section>
@@ -486,17 +569,39 @@ footer ul li a:hover { color: var(--gold-bright); }
   </div>
 </section>
 
-<section class="pricing" id="purchase">
+<section class="pricing" id="waitlist">
   <div class="container">
     <div class="section-head text-center">
-      <div class="section-eyebrow">purchase</div>
-      <h2 class="section-title">1주일 챌린지를 시작해 보세요</h2>
-      <p class="section-sub">1일 2포 기준으로 체험팩, 1주일 챌린지 박스, 1개월 정기구독 세 가지 옵션을 준비했습니다.</p>
+      <div class="section-eyebrow">coming soon</div>
+      <h2 class="section-title">곧 출시됩니다</h2>
+      <p class="section-sub">힘뇌장은 현재 7차 시제품 단계로, 콜마BNH 양산화 준비 중입니다. 출시 알림을 받으시면 정식 출시일과 사전 예약 혜택을 가장 먼저 안내드립니다.</p>
     </div>
-    <div class="price-grid">
-      <div class="price-card"><h3>체험 4팩</h3><div class="price-desc">신규 첫 경험 · 2일분</div><div class="price-strike">₩6,000</div><div class="price-amount">₩4,800<span>/4스틱</span></div><ul><li>2일 분량 (하루 2포 × 2일)</li><li>오전·오후 리추얼 체험</li><li>맛·식감 1차 평가용</li><li>편의점 한정 출시</li></ul><a href="#" class="btn btn-secondary">체험팩 구매</a></div>
-      <div class="price-card featured"><div class="price-badge">★ 1주일 챌린지</div><h3>14포 1박스</h3><div class="price-desc">하루 2포 × 7일 (1주일분)</div><div class="price-strike">₩16,800</div><div class="price-amount">₩14,500<span>/14스틱</span></div><ul><li>1포당 ₩1,036 (14% 할인)</li><li>1주일 챌린지 정확 분량</li><li>가방에 쏙 들어가는 슬림 박스</li><li>당일 발송 / 무료배송</li></ul><a href="#" class="btn">1주일 챌린지 시작</a></div>
-      <div class="price-card"><h3>60포 정기구독</h3><div class="price-desc">하루 2포 × 30일 (1개월분)</div><div class="price-strike">₩72,000</div><div class="price-amount">₩59,400<span>/60스틱</span></div><ul><li>10% 락인 할인 (월정액)</li><li>매월 자동배송, 언제든 해지</li><li>1주일 챌린지 박스 × 4박스 분량</li><li>'효도 한 박스' 선물 가능</li></ul><a href="#" class="btn btn-secondary">정기구독 시작</a></div>
+
+    <div class="waitlist-box">
+      <div class="waitlist-content">
+        <div class="waitlist-eyebrow">EARLY ACCESS</div>
+        <h3>가장 먼저 만나보세요</h3>
+        <p class="waitlist-text">사전 알림 신청자에게는 정식 출시 전 시식·체험 기회와 얼리버드 혜택을 우선 제공합니다. 어떤 분이 가장 기다리고 계신지가 출시 시점·채널을 결정하는 데 큰 도움이 됩니다.</p>
+        <div class="waitlist-row">
+          <input type="email" class="waitlist-email" placeholder="이메일 주소를 입력하세요" />
+          <a href="#" class="btn waitlist-btn">알림 신청하기</a>
+        </div>
+        <p class="waitlist-note">또는 카카오톡 채널 추가 · 인스타그램 @himnoejang 팔로우로도 받아보실 수 있습니다.</p>
+      </div>
+      <div class="waitlist-stats">
+        <div class="ws-stat">
+          <div class="ws-num">7차</div>
+          <div class="ws-label">시제품 진행 중</div>
+        </div>
+        <div class="ws-stat">
+          <div class="ws-num">2026</div>
+          <div class="ws-label">하반기 출시 목표</div>
+        </div>
+        <div class="ws-stat">
+          <div class="ws-num">콜마BNH</div>
+          <div class="ws-label">양산 라인 확정</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -519,7 +624,7 @@ footer ul li a:hover { color: var(--gold-bright); }
   <div class="container">
     <h2>일주일 후, 달라진 나를<br>만나보세요.</h2>
     <p>오늘 한 포로 시작해, 부담 없는 두 번째 한 포로 또렷한 하루를 마무리하세요.</p>
-    <a href="#purchase" class="btn">1주일 챌린지 ₩14,500 시작하기</a>
+    <a href="#waitlist" class="btn">출시 알림 신청하기</a>
   </div>
 </section>
 
@@ -554,7 +659,7 @@ footer ul li a:hover { color: var(--gold-bright); }
           </div>
         </div>
       </div>
-      <div><h5>제품</h5><ul><li><a href="#ingredients">원료 안내</a></li><li><a href="#researcher">개발자 소개</a></li><li><a href="#audience">누구를 위해</a></li><li><a href="#purchase">구매하기</a></li></ul></div>
+      <div><h5>제품</h5><ul><li><a href="#ingredients">원료 안내</a></li><li><a href="#researcher">개발자 소개</a></li><li><a href="#audience">누구를 위해</a></li><li><a href="#waitlist">출시 알림</a></li></ul></div>
       <div><h5>회사</h5><ul><li><a href="#">브랜드 스토리</a></li><li><a href="#">R&D</a></li><li><a href="#">B2B 문의</a></li><li><a href="#">보도자료</a></li></ul></div>
       <div><h5>고객 지원</h5><ul><li><a href="#">FAQ</a></li><li><a href="#">배송/반품</a></li><li><a href="#">정기구독</a></li><li><a href="#">카카오톡 상담</a></li></ul></div>
     </div>
